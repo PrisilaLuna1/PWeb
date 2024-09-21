@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    background-color: rgb(250, 248, 240);
+}
+img{
+    width: 150px;
+}
+
+.navbar{
+    width: 100% !important;
+    height: 420px !important;
+}
