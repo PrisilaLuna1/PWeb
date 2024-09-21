@@ -1,3 +1,9 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Euclid Circular A", "Poppins";
+}
 header{
     display: flex;
     flex-direction: row;
@@ -14,14 +20,198 @@ img{
     height: 420px !important;
 }
 
+
 .banner {
+    font-family: "Euclid Circular A", "Poppins";
     background-image: url('https://www.itemporality.com/cdn/shop/articles/El_Significado_de_las_Estrellas_Mas_Alla_de_su_Brillo.jpg?v=1715951161'); /* Cambia la ruta a tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    height: 100vh; /* Altura del contenedor (100% de la ventana) */
-    display: flex; /* Para centrar el contenido dentro del contenedor */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    color: white; /* Color del texto */
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    /* margin-bottom: 20%; */
+    align-items: baseline;
+    color: white;
+    height: 300px;
+  }
+
+  
+  h1 {
+    margin: 0; 
+    font-size: 10rem; 
+}
+
+h2 {
+    margin: 0; 
+    margin-left: 1cm;
+    font-size: 1.5rem;
+}
+p{
+    color: rgb(31, 40, 48);
+}
+
+  #blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #f9f8ff;
+  }
+
+  .titulo h3{
+    font-size: 2.4rem;
+    color: #252525;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+  }
+
+  .titulo strong{
+    color: #1a97fe;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+  }
+
+  .contenedor-blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1050px;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .blog-box{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.3s;
+  }
+
+  .blog-img{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;  }
+
+  .blog-box:hover{
+    background-color: #ffffff;
+    box-shadow: 16px 20px 50px rgba(0, 0, 0, 0.12);
+  }
+
+  .blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 0.3s;
   }
   
+  .blog-img-link{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #252525;
+    box-shadow: 2px 2px 30px rgba(20, 97, 212, 0.12);
+    animation: fade 0.3s;
+  }
+
+  .blog-box:hover .blog-img a{
+    display: flex;
+  }
+
+  .blog-box:hover .blog-img img{
+    filter: blur(3px);
+  }
+
+  @keyframes fade{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+
+  .blog-box-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 20px 10px;
+  }
+
+  .blog-box-text strong,
+  .blog-box-text p{
+    color: #797979;
+    font-size: 0.9;
+    font-weight: 400;
+  }
+
+  .blog-box-text a{
+    font-size: 1.4rem;
+    color: #252525;
+    font-weight: 800;
+    line-height: 1.8rem;
+    margin: 5px 0px 10px 0px;
+  }
+
+  .blog-box-text p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .usuario{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .foto-perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  .foto-perfil img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   object-position: center;
+  }
+
+  .autor-texto{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autor-texto strong{
+    color: #252525;
+    font-weight: 800;
+  }
+
+  .autor-texto span{
+    color: #797979;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
