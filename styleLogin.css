@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0 24px;
   /* background-image: url("https://i.imgur.com/zIMhamh.jpeg"); */
-  background-image: url("2833951.jpg");
+  background-image: url('https://www.itemporality.com/cdn/shop/articles/El_Significado_de_las_Estrellas_Mas_Alla_de_su_Brillo.jpg?v=1715951161');
   background-size: 2000px 1000px;
   background-position: -500px 0;
   color: #f9f9f9;
@@ -42,8 +42,10 @@ body {
   translate: -50% -50%;
   width: 90%;
   padding: 70px 30px 44px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 22px;
-  background: #f9f9f9;
+  background: transparent;
+  backdrop-filter: blur(20px);
   text-align: center;
 }
 
@@ -69,11 +71,11 @@ body {
   object-fit: cover;
   border-radius: 50%;
 
-  border: 4px solid #161616;
+  border: 4px solid #050028;
 }
 
 .login > h2 {
-    color: #050028;
+    color: #f9f9f9;
   font-size: 36px;
   font-weight: 500;
   margin: 0 0 4px;
@@ -105,7 +107,7 @@ body {
   top: 50%;
   left: 16px;
   translate: 0 -50%;
-  color: rgba(3, 17, 73, 0.38);
+  color: #f9f9f9;
 }
 
 .login-form input{
@@ -130,10 +132,11 @@ body {
 
 .login-form input {
   background: transparent;
-  border: 2px solid rgba(11, 3, 57, 0.422);
+  border: 2px solid rgba(195, 194, 200, 0.422);
   font-size: 18px;
   padding: 0 20px 0 50px;
   color: inherit;
+
 }
 
 .login-form input:focus {
@@ -146,15 +149,15 @@ body {
 
 .login-form button {
   cursor: pointer;
-  background: #050028;
-  color: #f9f9f9;
+  background: #f4f8ff;
+  color: #050028;
   border: 0;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 .login-form a {
-  color: #050028;
+  color: #f9f9f9;
   font-size: 16px;
   text-align: left;
   text-decoration: none;
